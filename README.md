@@ -15,3 +15,4 @@ Static landing page. Serve `dist/` with any static HTTP server.
 ## Hosting
 
 `.openai/hosting.json` identifies the registered Site. The delivered Sites preview is owner-private; public hosting or a public custom domain is needed before using it as a Google Ads destination.
+# AminAutoDiag

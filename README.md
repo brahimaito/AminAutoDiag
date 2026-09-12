@@ -6,7 +6,7 @@ Static landing page. Serve `dist/` with any static HTTP server.
 - Five service cards, each with its own prefilled WhatsApp message.
 - Google Maps and Instagram link to the URLs supplied by the business.
 - Selected AI illustrations are documented in `assets/generated/README.md`; optimized publication images live in `dist/images/`.
-- Exact street address and opening hours were not supplied; no invented reviews, prices, opening times or vehicle compatibility claims are displayed.
+- Exact street address and opening hours were not supplied; no invented reviews, prices, opening times or vehicle compatibility claims are displayed. The ads-safe landing page uses French only; do not add Arabic-script or Darija copy while using formats reviewed under Display & Video 360 language rules.
 
 ## Ads measurement
 

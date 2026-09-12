@@ -73,6 +73,10 @@ letter-spacing:-5px;
 padding-right:5px;
 transform:skew(-5deg);
 border-radius:4px}
+.brand-logo{width:46px;
+height:46px;
+object-fit:contain;
+flex-shrink:0}
 .brand-mark span{position:absolute;
 right:3px;
 top:1px;
@@ -298,6 +302,8 @@ padding-bottom:28px}
 .footer-main .brand-mark{width:39px;
 height:39px;
 font-size:32px}
+.footer-main .brand-logo{width:39px;
+height:39px}
 .footer-main p,.footer-main>a:last-child{font-size:13px;
 color:var(--muted)}
 .footer-bottom{border-top:1px solid var(--line);
@@ -336,6 +342,8 @@ gap:9px}
 .brand-mark{width:38px;
 height:38px;
 font-size:31px}
+.brand-logo{width:38px;
+height:38px}
 .header nav{display:none}
 .button-small span{display:none}
 .button-small{padding:11px;

@@ -10,9 +10,11 @@ Static landing page. Serve `dist/` with any static HTTP server.
 
 ## Ads measurement
 
-`dist/app.js` pushes `whatsapp_click` (service, placement), `phone_click`, and `directions_click` to `window.dataLayer`. No Google tag/account ID has been supplied. These events are prepared for integration, but are **not currently sent to Google Ads or Analytics**. A WhatsApp click measures an outbound click, not a sent message, qualified lead or booking. Configure account tags and appropriate privacy handling before advertising; verify actual conversations and appointments separately.
+GA4 `G-09S8K7RNJY` is installed once in the HTML head. `dist/app.js` sends `whatsapp_click` (service, placement), `phone_click`, and `directions_click` with `gtag('event', ...)`, plus `landing_service` and `funnel_version`. Confirm receipt in GA4 Realtime/DebugView. A WhatsApp click is not a sent message, qualified lead or booking. Google Ads conversion import is configured separately in the account.
+
+Optional `?service=diagnostic|cles|fap|puissance|carplay` adapts the hero and general WhatsApp CTAs. Unknown values use the general page. Every service card retains its own message. Run `node tests/contact-flow.cjs` to verify the contact flow. See `marketing-audit.md` for the audit and WhatsApp Business setup.
 
 ## Hosting
 
-`.openai/hosting.json` identifies the registered Site. The delivered Sites preview is owner-private; public hosting or a public custom domain is needed before using it as a Google Ads destination.
+Push to the GitHub repository's `main` branch to trigger the existing Vercel deployment. Public URL: https://amin-auto-diag.vercel.app/. The old `.openai/hosting.json` is retained for history; do not deploy to Sites for this project.
 # AminAutoDiag

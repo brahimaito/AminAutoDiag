@@ -109,7 +109,8 @@ padding:13px 18px;
 font-size:14px}
 .button-small svg{width:20px;
 height:20px}
-.hero{background:var(--dark);
+.hero{padding-bottom:42px;
+background:var(--dark);
 color:#fff;
 padding-top:52px}
 .hero-grid{display:grid;
@@ -129,7 +130,7 @@ height:2px;
 background:var(--lime)}
 .hero .eyebrow{color:#d0d9d1}
 .hero h1{font-family:'Barlow Condensed','Arial Narrow',Impact,sans-serif;
-font-size:clamp(62px,6.5vw,96px);
+font-size:clamp(48px,4.7vw,70px);
 letter-spacing:-.02em;
 line-height:1.01;
 font-weight:700;
@@ -142,7 +143,7 @@ line-height:1.7;
 margin:0}
 .hero-reassurance{font-size:15px;
 color:#fff;
-margin:12px 0 27px}
+margin:12px 0 18px}
 .hero-note{display:flex;
 gap:19px;
 margin-top:18px;
@@ -322,7 +323,7 @@ color:#7a827b}
 @media(max-width:1100px){.container{width:calc(100% - 56px)}
 .header nav{gap:22px}
 .hero-grid{gap:28px}
-.hero h1{font-size:76px}
+.hero h1{font-size:58px}
 .hero-visual{min-height:540px}
 .service-grid{grid-template-columns:repeat(3,1fr)}
 .service-card:nth-last-child(-n+2){grid-column:span 1}
@@ -351,7 +352,7 @@ min-height:42px}
 .hero{padding-top:31px}
 .hero-grid{grid-template-columns:1fr;
 gap:29px}
-.hero h1{font-size:64px;
+.hero h1{font-size:46px;
 line-height:1.02;
 margin:19px 0}
 .desktop-br{display:none}
@@ -456,6 +457,20 @@ background:white}
 *,*:before,*:after{transition:none!important;
 animation:none!important}
 }
+
+/* Clear service choice before the first photo, including on mobile. */
+.hero-services{display:flex;flex-wrap:wrap;gap:8px;margin:19px 0 24px}
+.hero-services a{border:1px solid #ffffff40;border-radius:5px;padding:7px 10px;font-size:13px;color:#e0e7df}
+.hero-services a:hover{border-color:var(--lime);color:var(--lime)}
+.hero-links{display:flex;flex-wrap:wrap;gap:10px 24px;font-size:13px;color:#d0d5d1}
+.hero-links a{text-decoration:underline;text-underline-offset:4px}
+.hero-links a:hover{color:var(--lime)}
+.questions{padding-bottom:52px;max-width:900px}
+.questions h2{font-size:34px;margin:0 0 22px}
+.questions details{border-bottom:1px solid var(--line);padding:17px 0}
+.questions summary{font-weight:600;cursor:pointer}
+.questions p{color:var(--muted);margin:12px 0 0;font-size:15px}
+@media(max-width:760px){.hero{padding-bottom:30px}.hero-reassurance{font-size:13px}.hero-copy .button{font-size:15px;padding:17px 12px}.hero-services{gap:7px;margin:16px 0 22px}.hero-links{font-size:12px}.hero-visual{height:245px}.questions{padding-bottom:35px}.questions h2{font-size:30px}}
 
 /* Service imagery and concise contact journey */
 .card-action{font-size:14px}
